@@ -39,6 +39,17 @@ Plug 'easymotion/vim-easymotion'
 "Tmux navigation - move between tmux windows and vim windows with same binds
 Plug 'christoomey/vim-tmux-navigator'
 
+"Tpope endwise. Addds end if after if etc
+Plug 'tpope/vim-endwise'
+
+"Close brackets etc when you press enter
+Plug 'rstacruz/vim-closer'
+
+"Autoclose
+Plug 'jiangmiao/auto-pairs'
+"Plug 'Raimondi/delimitMate'
+
+
 " Initialize plugin system
 call plug#end()
 
