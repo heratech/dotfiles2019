@@ -44,12 +44,17 @@ Plug 'tpope/vim-endwise'
 
 "Close brackets etc when you press enter
 Plug 'rstacruz/vim-closer'
-
+Plug 'junegunn/goyo.vim'
 "Autoclose
 Plug 'jiangmiao/auto-pairs'
 "Plug 'Raimondi/delimitMate'
-
-
+"Tmux window navigation vim style, allows you to use the same keybinds to
+"switch tmux panes, even when in vim. Aware of vim splits to 
+Plug 'christoomey/vim-tmux-navigator'
+"Run tmux commands from inside vim
+"" Run last command executed by VimuxRunCommand
+"map <Leader>vl :VimuxRunLastCommand<CR>"
+Plug 'benmills/vimux'
 " Initialize plugin system
 call plug#end()
 
@@ -109,3 +114,8 @@ set undodir=~/.undodir
 "Undo plugin bind
 nnoremap <F5> :UndotreeToggle<cr>
 
+
+" Run last command executed by VimuxRunCommand
+map <Leader>vl :VimuxRunLastCommand<CR>
+" Prompt for a command to run
+map <Leader>vp :VimuxPromptCommand<CR>
