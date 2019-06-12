@@ -55,6 +55,14 @@ Plug 'christoomey/vim-tmux-navigator'
 "" Run last command executed by VimuxRunCommand
 "map <Leader>vl :VimuxRunLastCommand<CR>"
 Plug 'benmills/vimux'
+
+"Complete tmux things on screen from vim
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'wellle/tmux-complete.vim'
+
+"AI machine learning completion??
+Plug 'zxqfl/tabnine-vim'
 " Initialize plugin system
 call plug#end()
 
@@ -109,6 +117,7 @@ nnoremap <Leader>a :Ack!<Space>
 set mouse=a
 
 "Persistent Undo
+"Make sure you create undodir! Otherwise no work!
 set undofile
 set undodir=~/.undodir
 "Undo plugin bind
@@ -119,3 +128,6 @@ nnoremap <F5> :UndotreeToggle<cr>
 map <Leader>vl :VimuxRunLastCommand<CR>
 " Prompt for a command to run
 map <Leader>vp :VimuxPromptCommand<CR>
+
+"Completion using omnifunc for tmux. Check the tmux-complete docs
+let g:tmuxcomplete#trigger = 'omnifunc'
