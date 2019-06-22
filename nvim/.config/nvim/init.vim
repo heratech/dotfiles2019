@@ -1,7 +1,7 @@
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Plugin outside ~/.vim/plugged with post-update hook
@@ -129,13 +129,4 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 " Prompt for a command to run
 map <Leader>vp :VimuxPromptCommand<CR>
 
-"Completion using omnifunc for tmux. Check the tmux-complete docs
-let g:tmuxcomplete#trigger = 'omnifunc'
 
-"I dont know why i need this, seems to be only on my chromebook
-"Otherwise my snytax highlight breaks when changing buffer..
-autocmd BufEnter * :set syntax=ON
-
-
-"hide error? Fzf complains when changing buffer otherwise
-set hidden
