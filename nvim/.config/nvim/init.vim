@@ -25,6 +25,8 @@ Plug 'tpope/vim-commentary'
 "Comment stuff out. Use gcc to comment out a line (takes a count), gc to comment out the target of a motion (for example, gcap to comment out a paragraph), gc in visual mode to comment out the selection, and gc in operator pending mode to target a comment. You can also use it as a command, either with a range like :7,17Commentary, or as part of a :global invocation like with :g/TODO/Commentary. That's it.
 "Lightline
  Plug 'itchyny/lightline.vim'
+ "Ack plugin for fast search
+ Plug 'mileszs/ack.vim'
 
  "Color schemes
  Plug 'flazz/vim-colorschemes'
@@ -57,9 +59,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
 
 "Complete tmux things on screen from vim
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'wellle/tmux-complete.vim'
+"Plug 'prabirshrestha/async.vim'
+"Plug 'prabirshrestha/asyncomplete.vim'
+"Plug 'wellle/tmux-complete.vim'
 
 "AI machine learning completion??
 "Plug 'zxqfl/tabnine-vim'
@@ -80,6 +82,8 @@ let mapleader="\<Space>"
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 "FZF Keybinds
+"Can use Ctrl+V to open in a vertical split, CTRL+T new tab, CTRL +X new
+"horizontal split
 "nnoremap <Leader>o :Files<CR>
 nnoremap <silent> <leader>t :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
@@ -113,7 +117,7 @@ endif
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
-"Mouse enable
+"Mouse enable, a option seems to cause issues with copy paste. Trying r
 set mouse=a
 
 "Persistent Undo
@@ -129,4 +133,6 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 " Prompt for a command to run
 map <Leader>vp :VimuxPromptCommand<CR>
 
+"hide so can switch buffer without writing for fzf etc
+set hidden
 

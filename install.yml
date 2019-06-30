@@ -1,7 +1,7 @@
 #!/usr/bin/env ansible-playbook
 #This is adapted from https://github.com/gbraad/dotfiles/blob/master/install.yml
 ---
-- hosts: jc
+- hosts: localhost
   #remote_user: root
   #become: yes
   #become_method: sudo

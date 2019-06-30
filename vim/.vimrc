@@ -130,11 +130,11 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 map <Leader>vp :VimuxPromptCommand<CR>
 
 "Completion using omnifunc for tmux. Check the tmux-complete docs
-let g:tmuxcomplete#trigger = 'omnifunc'
+"let g:tmuxcomplete#trigger = 'omnifunc'
 
 "I dont know why i need this, seems to be only on my chromebook
 "Otherwise my snytax highlight breaks when changing buffer..
-autocmd BufEnter * :set syntax=ON
+"autocmd BufEnter * :set syntax=ON
 
 
 "hide error? Fzf complains when changing buffer otherwise
