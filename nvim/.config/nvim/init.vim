@@ -47,8 +47,8 @@ Plug 'tpope/vim-endwise'
 "Close brackets etc when you press enter
 Plug 'rstacruz/vim-closer'
 Plug 'junegunn/goyo.vim'
-"Autoclose
-Plug 'jiangmiao/auto-pairs'
+"Autoclose - disabling because its being weird..
+"Plug 'jiangmiao/auto-pairs'
 "Plug 'Raimondi/delimitMate'
 "Tmux window navigation vim style, allows you to use the same keybinds to
 "switch tmux panes, even when in vim. Aware of vim splits to 
