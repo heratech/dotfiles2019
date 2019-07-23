@@ -58,6 +58,8 @@ Plug 'christoomey/vim-tmux-navigator'
 "map <Leader>vl :VimuxRunLastCommand<CR>"
 Plug 'benmills/vimux'
 
+"COde runner
+Plug "0x84/vim-coderunner"
 "Complete tmux things on screen from vim
 "Plug 'prabirshrestha/async.vim'
 "Plug 'prabirshrestha/asyncomplete.vim'
