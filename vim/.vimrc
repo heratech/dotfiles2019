@@ -139,3 +139,4 @@ map <Leader>vp :VimuxPromptCommand<CR>
 
 "hide error? Fzf complains when changing buffer otherwise
 set hidden
+set clipboard=unnamed

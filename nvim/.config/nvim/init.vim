@@ -48,7 +48,7 @@ Plug 'tpope/vim-endwise'
 Plug 'rstacruz/vim-closer'
 Plug 'junegunn/goyo.vim'
 "Autoclose
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
 "Plug 'Raimondi/delimitMate'
 "Tmux window navigation vim style, allows you to use the same keybinds to
 "switch tmux panes, even when in vim. Aware of vim splits to 
