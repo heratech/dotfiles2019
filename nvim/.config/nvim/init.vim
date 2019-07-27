@@ -45,9 +45,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-endwise'
 
 "Close brackets etc when you press enter
-Plug 'rstacruz/vim-closer'
+"Plug 'rstacruz/vim-closer'
 Plug 'junegunn/goyo.vim'
-"Autoclose
+"Autoclose - disabling because its being weird..
 "Plug 'jiangmiao/auto-pairs'
 "Plug 'Raimondi/delimitMate'
 "Tmux window navigation vim style, allows you to use the same keybinds to
@@ -58,6 +58,13 @@ Plug 'christoomey/vim-tmux-navigator'
 "map <Leader>vl :VimuxRunLastCommand<CR>"
 Plug 'benmills/vimux'
 
+"COde runner
+Plug '0x84/vim-coderunner'
+
+"Vimwiki
+Plug 'vimwiki/vimwiki'
+"Taskwiki
+Plug 'tbabej/taskwiki'
 "Complete tmux things on screen from vim
 "Plug 'prabirshrestha/async.vim'
 "Plug 'prabirshrestha/asyncomplete.vim'
@@ -118,7 +125,7 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 
 "Mouse enable, a option seems to cause issues with copy paste. Trying r
-set mouse=a
+set mouse=r
 
 "Persistent Undo
 "Make sure you create undodir! Otherwise no work!
@@ -135,4 +142,4 @@ map <Leader>vp :VimuxPromptCommand<CR>
 
 "hide so can switch buffer without writing for fzf etc
 set hidden
-
+set clipboard=unnamedplus
