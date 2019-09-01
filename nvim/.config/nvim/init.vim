@@ -65,6 +65,10 @@ Plug '0x84/vim-coderunner'
 Plug 'vimwiki/vimwiki'
 "Taskwiki
 Plug 'tbabej/taskwiki'
+
+"vim-unit testing
+Plug 'janko/vim-test'
+
 "Complete tmux things on screen from vim
 "Plug 'prabirshrestha/async.vim'
 "Plug 'prabirshrestha/asyncomplete.vim'
@@ -143,3 +147,13 @@ map <Leader>vp :VimuxPromptCommand<CR>
 "hide so can switch buffer without writing for fzf etc
 set hidden
 set clipboard=unnamedplus
+
+
+"Unit testing
+" these "Ctrl mappings" work well when Caps Lock is mapped to Ctrl
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
+

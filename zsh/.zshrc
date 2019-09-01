@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode z alias-tips)
+plugins=(git vi-mode z artisan composer alias-tips)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,5 +98,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias t="task"
+alias a="artisan"
+alias tinker="artisan tinker"
+alias serve="artisan serve"
+alias te="vendor/phpunit/phpunit/phpunit"
+alias te="vendor/phpunit/phpunit/phpunit"
+alias phpunit="vendor/bin/phpunit"
+
+ARTISAN_OPEN_ON_MAKE_EDITOR=pstorm 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
