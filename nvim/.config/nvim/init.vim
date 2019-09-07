@@ -20,6 +20,8 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 "Set tablines etc based on file - expand tabe and shiftwidth
 Plug 'tpope/vim-sleuth'
+"Git stuff!
+Plug 'tpope/vim-fugitive'
 
 "Nice commenting / uncommenting of code
 Plug 'tpope/vim-commentary'
