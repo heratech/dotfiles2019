@@ -7,6 +7,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+" Plug 'Shougo/denite.nvim'
 
 "Startup screen for vim/dashboard recent files
 Plug 'mhinz/vim-startify'
@@ -33,6 +34,9 @@ Plug 'tpope/vim-commentary'
 
  "Undo tree - bound to F5 later
  Plug 'mbbill/undotree'
+ "Coc vim
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 "Easy motion - keys such as w and f to move around
 Plug 'easymotion/vim-easymotion'
@@ -69,6 +73,11 @@ Plug 'tbabej/taskwiki'
 "vim-unit testing
 Plug 'janko/vim-test'
 
+"EditorConfig
+Plug 'editorconfig/editorconfig-vim'
+
+Plug 'arnaud-lb/vim-php-namespace'
+
 "Complete tmux things on screen from vim
 "Plug 'prabirshrestha/async.vim'
 "Plug 'prabirshrestha/asyncomplete.vim'
@@ -98,6 +107,7 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 "nnoremap <Leader>o :Files<CR>
 nnoremap <silent> <leader>t :Files<CR>
 nnoremap <silent> <leader>b :Buffers<CR>
+nnoremap <silent> ; :Buffers<CR>
 nnoremap <silent> <leader>A :Windows<CR>
 nnoremap <silent> <leader>; :BLines<CR>
 nnoremap <silent> <leader>o :BTags<CR>
@@ -156,4 +166,14 @@ nmap <silent> t<C-f> :TestFile<CR>
 nmap <silent> t<C-s> :TestSuite<CR>
 nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
+
+"Coc nvim
+
+"Auto import function caret is on
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
 
