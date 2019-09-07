@@ -41,6 +41,7 @@
     - zsh
     - tmux
     - nvim
+    - ideavim
 
   - name: Install nvim plugins
     command: nvim +'PlugInstall --sync' +qa
