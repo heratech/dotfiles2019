@@ -5,7 +5,7 @@ nmap <leader>ev :e ~/.ideavimrc<cr>
 
 "Debug stuff
 
-map <leader>dd :action Debug<CR>
+map <leader>dd :action DebugClass<CR>
 map <leader>cd :action ChooseDebugConfiguration<CR>
 map <leader>rr :action Run<CR>
 map <leader>cr :action ChooseRunConfiguration<CR>
@@ -13,3 +13,7 @@ map <leader>cr :action ChooseRunConfiguration<CR>
 "Enable plugins surround and multi cursor
 set surround
 set multiple-cursors
+
+
+" Easy motion like plugin
+nmap <leader><leader>s :action KJumpAction<CR>
